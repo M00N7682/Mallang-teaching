@@ -1,0 +1,42 @@
+/* 전체 홈 페이지 박스 */
+.home-page {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* 메인 배너 이미지 */
+.main-banner img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* '더 알아보기' 타이틀 영역 */
+.learn-more {
+  margin-top: 40px;
+}
+
+/* 카드 정렬 */
+.image-link-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* 각 이미지 링크 카드 */
+.image-link {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.image-link:hover {
+  transform: scale(1.05);
+}

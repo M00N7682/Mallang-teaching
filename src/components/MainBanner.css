@@ -1,0 +1,12 @@
+.main-banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-banner-img {
+  width: 100%;
+  max-width: 1200px;
+  object-fit: cover;
+  border-radius: 12px;
+}

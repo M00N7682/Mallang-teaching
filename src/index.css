@@ -1,0 +1,51 @@
+/* src/index.css */
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Noto Sans KR', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  color: #212121;
+  box-sizing: border-box;
+}
+
+/* 기본 텍스트와 링크 스타일 */
+a {
+  font-weight: 500;
+  color: #2a4d3c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00796b;
+}
+
+/* 버튼 기본 스타일 (필요할 경우만) */
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #00796b;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+button:hover {
+  background-color: #005f50;
+}
+
+/* 반응형 기본 세팅 */
+* {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
