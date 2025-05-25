@@ -1,0 +1,65 @@
+.history-page {
+  font-family: 'Pretendard', sans-serif;
+}
+
+.banner-image {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* History.css */
+
+.content-container {
+  display: flex; /* 중요! */
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0 40px;
+}
+
+
+/* 왼쪽 영역 */
+.left-section {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.profile-box {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.profile-box img {
+  width: 100px;
+  height: auto;
+}
+
+.chat-box {
+  background-color: #e0f7fa;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.emotions span {
+  margin-right: 10px;
+}
+
+/* 오른쪽 영역 */
+.right-section {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.calendar-box,
+.book-box {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 12px;
+}

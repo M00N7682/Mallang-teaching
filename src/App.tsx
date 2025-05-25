@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import FinancePage from "./pages/FinancePage";
 import SafetyPage from "./pages/SafetyPage";
 import Header from "./components/Header";
+import HistoryPage from "./pages/HistoryPage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/finance" element={<FinancePage />} />
           <Route path="/safety" element={<SafetyPage />} />
+          <Route path="/history" element={<HistoryPage />} />
         </Routes>
       </>
     </BrowserRouter>
