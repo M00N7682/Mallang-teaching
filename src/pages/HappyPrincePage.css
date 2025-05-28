@@ -1,0 +1,72 @@
+.book-page {
+  padding: 0;
+  font-family: 'Pretendard', sans-serif;
+  background-color: white;
+  color: #333;
+}
+
+.book-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.book-title {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.scene {
+  display: flex;
+  align-items: center;
+  padding: 30px 40px;
+  border-bottom: 1px solid #eee;
+}
+
+.scene-image {
+  width: 150px;
+  height: auto;
+  margin-right: 40px;
+}
+
+.scene-text {
+  font-size: 20px;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+.understanding-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 30px 40px;
+  background-color: #f4f4f4;
+}
+
+.understood {
+  background-color: #b2e4e3;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.not-understood {
+  background-color: #33b39d;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.scroll-icon {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}

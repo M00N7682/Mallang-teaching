@@ -52,7 +52,7 @@ export default function HistoryPage() {
               <h3>오늘의 할 일</h3>
               <ul>
                 <li><input type="checkbox" /> 진로 교육 듣기</li>
-                <li><input type="checkbox" /> '어린왕자' 읽고 독서록 쓰기</li>
+                <li><input type="checkbox" /> '구운몽' 읽고 독서록 쓰기</li>
                 <li><input type="checkbox" /> 방과후 활동 하기</li>
               </ul>
             </div>

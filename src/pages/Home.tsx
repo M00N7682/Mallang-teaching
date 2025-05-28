@@ -28,7 +28,7 @@ const Home = () => {
           <Link to="/career">
             <img src={careerImg} alt="진로 교육" className="image-link" />
           </Link>
-          <Link to="/story">
+          <Link to="/book-select">  {/* ✅ 여기만 수정 */}
             <img src={storyImg} alt="소설" className="image-link" />
           </Link>
         </div>
