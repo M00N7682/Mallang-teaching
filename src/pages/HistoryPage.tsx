@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./HistoryPage.css";
 import bannerImage from "../assets/images/job_banner.png";
 import studentImage from "../assets/images/student.png";
 
+import Calendar from "react-calendar";
+import "react-calendar/dist/Calendar.css";
+
 export default function HistoryPage() {
+  const [value, setValue] = useState(new Date());
+
   return (
     <div className="history-page">
       <img src={bannerImage} alt="배너" className="banner-image" />
@@ -23,11 +28,13 @@ export default function HistoryPage() {
           </div>
 
           <div className="chat-box">
-            <p><strong>오늘 수업 내용 어땠어요?</strong> 말풍선에서 골라볼래요?</p>
+            <p>
+              <strong>오늘 수업 내용 어땠어요?</strong> 말풍선에서 골라볼래요?
+            </p>
             <div className="emotions">
-              <span>😊 좋아요</span>
-              <span>😵 어려워요</span>
-              <span>😴 졸려요</span>
+              <button>😊 좋아요</button>
+              <button>😵 어려워요</button>
+              <button>😴 졸려요</button>
             </div>
             <input type="text" placeholder="여기에 적어주세요..." />
           </div>
@@ -35,16 +42,30 @@ export default function HistoryPage() {
 
         {/* 오른쪽 박스 */}
         <div className="right-section">
-          <div className="calendar-box">
-            <h3>이번주에 할 일을 확인해 볼까요?</h3>
-            {/* 캘린더 내용 (테이블이나 컴포넌트로 대체 가능) */}
-            <p>[캘린더 표시 영역]</p>
+          <div className="calendar-and-todo">
+            <div className="calendar-box">
+              <h3>이번주에 할 일을 확인해 볼까요?</h3>
+              <Calendar onChange={setValue} value={value} />
+            </div>
+
+            <div className="today-todo-box">
+              <h3>오늘의 할 일</h3>
+              <ul>
+                <li><input type="checkbox" /> 진로 교육 듣기</li>
+                <li><input type="checkbox" /> '어린왕자' 읽고 독서록 쓰기</li>
+                <li><input type="checkbox" /> 방과후 활동 하기</li>
+              </ul>
+            </div>
           </div>
 
           <div className="book-box">
             <h3>내가 말랑 보관함에 담아둔 책</h3>
-            <p>📘 가방 들어주는 아이 - 고정욱 <button>읽으러 가기!</button></p>
-            <p>📗 어린 왕자 - 생텍쥐페리 <button>읽으러 가기!</button></p>
+            <p>
+              📘 가방 들어주는 아이 - 고정욱 <button>읽으러 가기!</button>
+            </p>
+            <p>
+              📗 어린 왕자 - 생텍쥐페리 <button>읽으러 가기!</button>
+            </p>
           </div>
         </div>
       </div>

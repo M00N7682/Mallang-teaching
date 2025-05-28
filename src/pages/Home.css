@@ -30,8 +30,8 @@
 
 /* 각 이미지 링크 카드 */
 .image-link {
-  width: 180px;
-  height: 180px;
+  width: 250px;
+  height: 250px;
   object-fit: contain;
   cursor: pointer;
   transition: transform 0.2s ease;
